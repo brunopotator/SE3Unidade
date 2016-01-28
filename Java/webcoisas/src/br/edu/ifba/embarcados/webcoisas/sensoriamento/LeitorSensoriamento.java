@@ -107,5 +107,14 @@ public class LeitorSensoriamento implements
 		
 		return som;
 	}
+	public static String getLeitura() {
+		int som = getSom();
+		int ldr = getLuminosidade();
+		int umid = getUmidade();
+		int temp = getTemperatura();
+		
+		
+		return "Sensores:\nSom: " + som + "\nLuminosidade: " + ldr + "\nUmidade: " + umid + "\nTemperatura: "+temp;
+	}
 	
 }

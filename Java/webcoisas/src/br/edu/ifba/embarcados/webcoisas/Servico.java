@@ -52,5 +52,13 @@ public class Servico {
 	public String getSom() {
 		return LeitorSensoriamento.getSom() + "";
 	}
+	
+	@GET
+	@Path("/sensores/leitura")
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getLeitura() {
+		return LeitorSensoriamento.getLeitura();
+	}
+
 
 }
